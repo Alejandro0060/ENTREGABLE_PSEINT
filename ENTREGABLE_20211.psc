@@ -12,8 +12,8 @@ Algoritmo sin_titulo
 		
 		Borrar Pantalla
 		Escribir "1.  Ejercicios del aprendiz RODRIGUEZ"
-		Escribir "2.  Ejercicios del aprendiz B"
-		Escribir "3.  Ejercicios del aprendiz C"
+		Escribir "2.  Ejercicios del aprendiz ARAGON"
+		Escribir "3.  Ejercicios del aprendiz CRUZ"
 		Escribir "4.  Ejercicios del aprendiz D"
 		Escribir "5.  Ejercicios del aprendiz E"
 		Escribir "6.  Ejercicios del aprendiz F"
@@ -27,7 +27,7 @@ Algoritmo sin_titulo
 					
 					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ RODRIGUEZ "
 					Escribir ""
-					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ APELLIDO"
+					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ RODRIGUEZ"
 					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
 					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
 					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
