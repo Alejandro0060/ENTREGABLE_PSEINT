@@ -7,6 +7,13 @@ Algoritmo sin_titulo
 	Definir ph, pm Como Real
 	DEFINIR a1,a2,a3,a4 Como Real
 	Definir a9 Como ENTERO
+	Definir mG, mT , mP Como real
+	Definir M Como Real
+	Definir Mm Como Entero
+	Definir MPc , W , MCd , MSc Como Real
+	Definir Mmedia Como Real
+	Definir Ñ , MPeso , MPersonas , MPersona , Mpromedio Como Real
+
 	
 	Repetir
 		
@@ -144,12 +151,12 @@ Algoritmo sin_titulo
 			3:
 				Repetir			
 					
-					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ C"
+					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ CRUZ"
 					Escribir ""
-					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ APELLIDO"
-					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
-					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
-					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
+					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ CRUZ"
+					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ CRUZ"
+					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ CRUZ"
+					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ CRUZ"
 					Escribir ""	
 					Escribir "Selecciones una opción"
 					Leer opcEj
@@ -157,24 +164,108 @@ Algoritmo sin_titulo
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "En un hospital existen tres áreas: Ginecología, Pediatría, Traumatologia"
+							Escribir "El presupuesto anual del hospital se reparte conforme a la sig. tabla: "
+							Escribir "                           Área            Porcentaje del presupuesto  "
+							Escribir "                       Ginecología                    40%     " 
+							Escribir "                     Traumatologia                    30%     "
+							Escribir "                         Pediatría                    30%     "
+							Escribir "Obtener la cantidad de dinero que recibirá cada área, para cualquier monto presupuestal."						
+							Escribir "Escriba el presupuesto anual "
+							leer M
+							mG<-M*0.4
+							mT<-M*0.3
+							mP<-M*0.3
+							Escribir " El monto de Ginecología es de $ " , mG   
+							Escribir " El monto de Traumatologia es de $ " , mT
+							Escribir " El monto de Pediatría es de $ " , mP						
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "Hacer un algoritmo que calcule el total a pagar por la compra de camisas"
+							Escribir "Si se compran tres camisas o más se aplica un descuento del 20%"
+							Escribir "sobre el total de la compra y si son menos de tres camisas un descuento del 10%"
+							Escribir "Escriba el numero de camisas que ha comprado"
+							Leer Mm
+							MSc <- 0
+							Para W <- 1 Hasta Mm Con Paso 1 Hacer
+								Escribir "Escriba el precio de la(s) " , Mm , " camisa(s)"
+								Leer MPc
+								MSc <- MSc + MPc
+							Fin Para
+							si Mm>=1 y Mm<=2 Entonces
+								MCd<-(MSc-(MSc*10)/100)
+								Escribir "Usted ha comprado " , Mm , " camisa(s) entonces se le harà un descuento del 10% "
+								Escribir "La(s) " , Mm , " camisa(s) cuestan : $" , MSc 
+								Escribir "Con el 10% de descuento son : $" , MCd
+							SiNo
+								si Mm>=3 Entonces
+									MCd<-(MSc-(MSc*20)/100)
+									Escribir "Usted ha comprado " , Mm , " camisa(s) entonces se le harà un descuento del 20% "
+									Escribir "La(s) " , Mm , " camisa(s) cuestan : $" , MSc 
+									Escribir "Con el 20% de descuento son : $" , MCd
+								SiNo
+									si Mm<=0 Entonces
+										Escribir "Usted no ha comprado camisas"
+									FinSi
+								FinSi
+							FinSi						
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "Pedir números hasta que se introduzca uno negativo, y calcular la media."						
+							MNumber <- 0; 
+							MContar <- 0;
+							MSuma <- 0;
+							Mientras MNumber >= 0 Hacer
+								Escribir "Escriba un numero";
+								Leer MNumber;
+								MSuma<- MSuma + MNumber
+								MContar <- MContar + 1
+							FinMientras
+							MContar <- MContar - 1
+							Mmedia <- (MSuma-MNumber)/MContar 
+							Escribir "La suma de los " , MContar , " numeros es :" , MSuma-MNumber
+							Escribir "Usted ha escrito " , MContar , " numeros"
+							Escribir "La media de los " , MContar , " numeros es :" , Mmedia					
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "Una persona debe realizar un muestreo con 50 personas para determinar el promedio de peso de los niños, jóvenes, adultos y viejos" 
+							Escribir "que existen en su zona habitacional. Se determinan las categorías con base  en la sig, tabla:"
+							
+							Escribir "  CATEGORIA      EDAD"
+							Escribir "     Niños      0 - 12"
+							Escribir "    Jóvenes    13 - 29"
+							Escribir "    Adultos    30 - 59"
+							Escribir "    Viejos    60 en adelante"					
+							Escribir "¿Cuantas personas va a pesar?"
+							Leer MPersonas
+							Escribir "Escriba la edad de las " , MPersonas , " personas "
+							Leer MPersona
+							MSumaPeso<-0
+							Para Ñ <- 1 Hasta MPersonas Con Paso 1 Hacer
+								Escribir "Escribir el peso en Kilogramos de la persona " , Ñ
+								Leer MPeso
+								MSumaPeso<-MSumaPeso+MPeso
+							Fin Para
+							Si MPersona>=0 y MPersona<=12 Entonces
+								ESCRIBIR "Ustedes son niños"
+								Mpromedio<- MSumaPeso/MPersonas
+							SiNo
+								si MPersona>=13 y MPersona<=29 Entonces
+									Escribir "Ustedes son jovenes"
+									Mpromedio<- MSumaPeso/MPersonas
+								SiNo
+									si MPersona>=30 y MPersona<=59 Entonces
+										Escribir "Ustedes son adultos"
+										Mpromedio<- MSumaPeso/MPersonas
+									SiNo
+										si MPersona>=60 Entonces
+											Escribir "Ustedes son viejos"
+											Mpromedio<- MSumaPeso/MPersonas
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+							Escribir "El peso promedio de " , MPersonas , " personas es : " , Mpromedio , " kilogramos "				
 						De Otro Modo:
 							Escribir "OPCIÓN NO VÁLIDA"
 					Fin Segun			
