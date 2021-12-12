@@ -13,6 +13,11 @@ Algoritmo sin_titulo
 	Definir MPc , W , MCd , MSc Como Real
 	Definir Mmedia Como Real
 	Definir Ñ , MPeso , MPersonas , MPersona , Mpromedio Como Real
+	Definir presion, volumen, tiempo Como Real
+	Definir ValorMasa Como Real
+	Definir JHoras,JHorasExtras,JPago Como Real
+	Definir Ja Como Entero
+	Definir J,Number,Jneutros,Jpositivos,Jnegativos Como Entero
 
 	
 	Repetir
@@ -109,12 +114,12 @@ Algoritmo sin_titulo
 			2:
 				Repetir			
 					
-					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ B"
+					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ ARAGON"
 					Escribir ""
-					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ APELLIDO"
-					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
-					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
-					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
+					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ ARAGON"
+					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ ARAGON"
+					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ ARAGON"
+					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ ARAGON"
 					Escribir ""	
 					Escribir "Selecciones una opción"
 					Leer opcEj
@@ -122,24 +127,73 @@ Algoritmo sin_titulo
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "se determinara el valor de la masa del aire"
+							Escribir "ingrese el valor de la presion"
+							Leer presion
+							Escribir "ingrese el valor del volumen"
+							Leer volumen
+							Escribir "ingrese el valor de la temperatura"
+							Leer tiempo
+							ValorMasa<-(presion*volumen)/(0.37*(tiempo+460))
+							Escribir "el valor de la masa del aire es: ", ValorMasa					
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "Este programa le ayudara a saber su salario semanal"
+							
+							Escribir "Escriba las horas trabajadas"
+							Leer JHoras
+							
+							si JHoras > 40 Entonces
+								JHorasExtras <- JHoras-40
+								JPago<- (40*16)+(JHorasExtras+20)
+							SiNo
+								JPago<- JHoras*16
+								
+							FinSi
+							
+							Escribir "El pago semanal por las ", JHoras, " horas trabajadas es de ", JPago, " Pesos"						
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "En este programa se pedira numeros hasta que se de un numero negativo y se calcula la cantidad de numeros dados"						
+							Ja<- 0;
+							contadorJa<- 0;
+							
+							Mientras Ja>=0 Hacer
+								Escribir "	Dar un numero "
+								Leer Ja
+								
+								contadorJa<- contadorJa+1
+								
+							Fin Mientras
+							
+							contadorJa<- contadorJa - 1
+							
+							Escribir "la cantidad de numeros escritos son: " contadorJa				
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "En este programa se pedira 20 numeros y se calculara cuantos son negativos, neutros y positivos"
+							Jneutros<- 0
+							Jpositivos<- 0
+							Jnegativos<- 0
+							Para J<- 1 Hasta 20 Con Paso 1 Hacer
+								Escribir "escribir un numero "
+								Leer Number
+								si Number = 0 Entonces
+									Jneutros<- Jneutros+1
+								SiNo
+									si Number < 0 Entonces
+										Jnegativos<- Jnegativos+1
+									SiNo
+										Jpositivos<- Jpositivos+1
+									FinSi
+									
+								FinSi
+								
+							Fin Para
+							
+							Escribir "la cantidad total de numeros neutros son ", Jneutros
+							Escribir "la cantidad total de numeros negativos son ", Jnegativos
+							Escribir "la cantidad total de numeros positivos son ", Jpositivos
 						De Otro Modo:
 							Escribir "OPCIÓN NO VÁLIDA"
 					Fin Segun			
