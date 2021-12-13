@@ -25,6 +25,11 @@ Algoritmo sin_titulo
 	Definir Sa, totalS Como Entero
 	definir n, suma, baja Como Real
 	Definir x Como Entero
+	Definir Dsalario Como Real
+	definir Dresultados Como Real
+	Definir Dtasa, Dinteres, Dcantidad como real
+	definir DnumerSecreto, Dn Como Entero
+	Definir Dx, DMn Como Entero
 	
 	sum=0
 	cant=cant-1 
@@ -352,22 +357,31 @@ Algoritmo sin_titulo
 			4:
 				Repetir			
 					
-					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ D"
+					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ MORENO"
 					Escribir ""
-					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ APELLIDO"
-					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
-					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
-					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
+					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ MORENO"
+					Escribir "2.  Ejercicios CONDICIONALES DEl APRENDIZ MORENO"
+					Escribir "3.  Ejercicios CICLICO MIENTRA DEl APRENDIZ MORENO"
+					Escribir "4.  Ejercicios CICLICO PARA DEl APRENDIZ MORENO"
 					Escribir ""	
 					Escribir "Selecciones una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
 						1:
-							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL";
+							Escribir "";
+							Escribir "Calcular el nuevo salario de un obrero si obtuvo un incremento del 25% sobre su salario anterior";
+							Escribir "";
+							Escribir "Esta apliacion le ayudara a Calcular el nuevo salario de un obrero si obtuvo un incremento del 25% sobre su salario anterior";
+							Escribir "";
+							Escribir "calculara el incremento del 25% del salario anterioro ";
+							Escribir "escriba salario";
+							leer Dsalario;
+							
+							Dresultados<-  Dsalario*0.25 ;
+							Escribir "El incremento del salario es de ", Dresultados;	
+							
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
 							Escribir "PROBLEMA:   SE TRATA DE ...."						
