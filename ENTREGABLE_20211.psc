@@ -34,6 +34,8 @@ Algoritmo sin_titulo
 	Definir Bn, Bc Como Caracter
 	Definir Bpo, Bpd Como Real
 	Definir BBn, Bi Como Real
+	Definir BA Como Entero
+	Definir BBprecio, Btotal, BtotalFinal, Bdescuento, Bkilos Como Real
 	
 	sum=0
 	cant=cant-1 
@@ -601,9 +603,26 @@ Algoritmo sin_titulo
 							FinMientras					
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "Este programa tiene como objetivo calcular el total que debe pagar una persona por la compra de naranjas"						
+							Escribir "Ingrese el precio del kilo de naranjas"
+							Leer BBprecio
+							BtotalFinal <- 0
+							Para BA <- 1 Hasta 15 Con Paso 1 Hacer
+								Btotal <- 0
+								Bdescuento <- 0
+								Escribir "Ingrese los kilos de naranjas"
+								Leer Bkilos
+								Si Bkilos > 10 Entonces
+									Btotal <- BBprecio*Bkilos
+									Bdescuento <- Btotal*.15
+								SiNo
+									Btotal <- BBprecio*Bkilos
+								FinSi
+								Escribir "La persona ", BA, " debe pagar: $", Btotal-Bdescuento
+								Escribir "Se aplico un descuento de: $", Bdescuento
+								BtotalFinal <- BtotalFinal+(Btotal-Bdescuento)
+							FinPara
+							Escribir "El ingreso total que recibira la tienda por las compras es: $", BtotalFinal					
 						De Otro Modo:
 							Escribir "OPCIÓN NO VÁLIDA"
 					Fin Segun			
