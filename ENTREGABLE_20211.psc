@@ -20,6 +20,11 @@ Algoritmo sin_titulo
 	Definir J,Number,Jneutros,Jpositivos,Jnegativos Como Entero
 	definir cont, cant, repet Como entero
 	definir not,sum como real 
+	definir salario , porciento Como Entero
+	Definir aS,b Como Entero
+	Definir Sa, totalS Como Entero
+	definir n, suma, baja Como Real
+	Definir x Como Entero
 	
 	sum=0
 	cant=cant-1 
@@ -32,7 +37,7 @@ Algoritmo sin_titulo
 		Escribir "2.  Ejercicios del aprendiz ARAGON"
 		Escribir "3.  Ejercicios del aprendiz CRUZ"
 		Escribir "4.  Ejercicios del aprendiz D"
-		Escribir "5.  Ejercicios del aprendiz E"
+		Escribir "5.  Ejercicios del aprendiz CONTRERAS"
 		Escribir "6.  Ejercicios del aprendiz F"
 		Escribir ""
 		Escribir "Seleccione una opción"
@@ -389,12 +394,12 @@ Algoritmo sin_titulo
 			5:	
 				Repetir			
 					
-					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ E"
+					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ CONTRERAS"
 					Escribir ""
-					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ APELLIDO"
-					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
-					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
-					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
+					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ CONTRERAS"
+					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ CONTRERAS"
+					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ CONTRERAS"
+					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ CONTRERAS"
 					Escribir ""	
 					Escribir "Selecciones una opción"
 					Leer opcEj
@@ -402,24 +407,63 @@ Algoritmo sin_titulo
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "Calcular el nuevo salario de un obrero si" 
+							escribir "obtuvo un incremento del 25% sobre su salario anterior"
+							Escribir "porfavor ingrese su salario"
+							Leer salario
+							porciento <- salario * 1.25
+							escribir " su salario con el incremento es  " porciento
+							
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "Que lea dos números y los imprima en forma ascendente"
+							Escribir "ingrese el primer numero"
+							leer aS
+							Escribir "ingrese el segundo numero"
+							leer b
+							Si aS>=b Entonces
+								Escribir b
+								Escribir aS
+							SiNo
+								Escribir aS
+								Escribir b
+							Fin Si
+							
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "Pedir números hasta que se teclee un 0"
+							Escribir  " mostrar la suma de todos los números introducidos"
+							Escribir "ingrese numero"
+							leer sa
+							totalS<-0
+							Mientras Sa<>0 Hacer
+								totalS<-totalS+Sa
+								escribir" ingrese numero o digite 0 para calcular"
+								leer Sa
+								
+							FinMientras
+							Escribir "total suma numeros ingresados: " totalS				
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "vamos a calcular la calificacion media y" 
+							Escribir "la mas baja de un grupo de 4 alumnos"
+							suma<-0
+							baja<-0
+							para x<-1 hasta 4 con paso 1 Hacer
+								Escribir "escribe una calificacion"
+								leer n 
+								si x==1 Entonces
+									baja<-n
+								SiNo
+									si n< baja Entonces
+										baja<- n
+									FinSi
+								FinSi
+								suma<-suma+n
+							FinPara
+							
+							escribir" la calificacion media del grupo es : " suma/ 4
+							Escribir "la calficacion mas baja del grupo es : " baja 				
 						De Otro Modo:
 							Escribir "OPCIÓN NO VÁLIDA"
 					Fin Segun			
