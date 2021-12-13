@@ -409,12 +409,32 @@ Algoritmo sin_titulo
 							FinSi
 							
 							Escribir "El saldo generado en la cuenta es de: ", Dcantidad + Dinteres;
-													
+							
 						3:
-							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS";
+							Escribir "";
+							Escribir "PROBLEMA:  Realizar un juego para adivinar un número. Para ello pedir un número N";
+							Escribir "y luego ir pidiendo números indicando mayor o menor según sea";
+							Escribir "mayor o menor con respecto a N. El proceso termina cuando el usuario acierta";
+							Escribir "";
+							DnumerSecreto <-  azar (10) + 1;
+							
+							Mientras Dn <> DnumerSecreto Hacer
+								Escribir "Ingrese un numero de 1 a 10";
+								leer Dn;
+								si Dn = DnumerSecreto Entonces
+									Escribir "Felicidades adivinaste el numero";
+									Escribir "El numero es: ", DnumerSecreto;;
+								SiNo
+									si Dn > DnumerSecreto  Entonces
+										escribir "El numero a adividar es menor";
+									SiNo
+										Escribir "El numero a adivinar es mayor";
+									FinSi
+									
+								FinSi
+								
+							FinMientras							
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
 							Escribir "PROBLEMA:   SE TRATA DE ...."						
