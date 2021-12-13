@@ -383,10 +383,33 @@ Algoritmo sin_titulo
 							Escribir "El incremento del salario es de ", Dresultados;	
 							
 						2:
-							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL";
+							Escribir "";
+							Escribir "PROBLEMA:Un hombre desea saber cuánto dinero se genera por concepto de intereses ";	
+							Escribir "sobre la cantidad que tiene en inversión en el banco.";
+							Escribir "El decidirá reinvertir los intereses siempre y cuando estos excedan a $3000,";
+							Escribir "y en ese caso desea saber cuánto dinero tendrá finalmente en su cuenta.";
+							Escribir "";
+							Escribir "Este programa le ayudara a saber cuánto dinero se genera por concepto de intereses sobre la cantidad que tiene en inversión en el banco";
+							Escribir "";
+							Escribir "Escribe la cantidad invertida en el banco";
+							Leer Dcantidad;
+							
+							Escribir "escriba la tasa de interes";
+							leer Dtasa;
+							
+							Dinteres = Dcantidad * Dtasa;
+							
+							si Dinteres >= 3000 Entonces
+								Escribir "La cantantidad generada por concepto de interes es: ", Dinteres, " Supera los 3000 pesos ";
+							SiNo
+								Escribir "la cantidad generada por concepto de interes es: ", Dinteres, " No supera los 3000 pesos";
+								
+								
+							FinSi
+							
+							Escribir "El saldo generado en la cuenta es de: ", Dcantidad + Dinteres;
+													
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
 							Escribir "PROBLEMA:   SE TRATA DE ...."						
