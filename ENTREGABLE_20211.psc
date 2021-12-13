@@ -30,6 +30,7 @@ Algoritmo sin_titulo
 	Definir Dtasa, Dinteres, Dcantidad como real
 	definir DnumerSecreto, Dn Como Entero
 	Definir Dx, DMn Como Entero
+	Definir BPrecio, BR Como Entero
 	
 	sum=0
 	cant=cant-1 
@@ -43,7 +44,7 @@ Algoritmo sin_titulo
 		Escribir "3.  Ejercicios del aprendiz CRUZ"
 		Escribir "4.  Ejercicios del aprendiz MORENO"
 		Escribir "5.  Ejercicios del aprendiz CONTRERAS"
-		Escribir "6.  Ejercicios del aprendiz F"
+		Escribir "6.  Ejercicios del aprendiz FIGUEROA"
 		Escribir ""
 		Escribir "Seleccione una opción"
 		Leer opc
@@ -59,7 +60,7 @@ Algoritmo sin_titulo
 					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ RODRIGUEZ"
 					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ RODRIGUEZ"
 					Escribir ""	
-					Escribir "Selecciones una opción"
+					Escribir "Seleccione una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
@@ -147,7 +148,7 @@ Algoritmo sin_titulo
 					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ ARAGON"
 					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ ARAGON"
 					Escribir ""	
-					Escribir "Selecciones una opción"
+					Escribir "Seleccione una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
@@ -238,7 +239,7 @@ Algoritmo sin_titulo
 					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ CRUZ"
 					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ CRUZ"
 					Escribir ""	
-					Escribir "Selecciones una opción"
+					Escribir "Seleccione una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
@@ -364,7 +365,7 @@ Algoritmo sin_titulo
 					Escribir "3.  Ejercicios CICLICO MIENTRA DEl APRENDIZ MORENO"
 					Escribir "4.  Ejercicios CICLICO PARA DEl APRENDIZ MORENO"
 					Escribir ""	
-					Escribir "Selecciones una opción"
+					Escribir "Seleccione una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
@@ -465,7 +466,7 @@ Algoritmo sin_titulo
 					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ CONTRERAS"
 					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ CONTRERAS"
 					Escribir ""	
-					Escribir "Selecciones una opción"
+					Escribir "Seleccione una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
@@ -539,22 +540,24 @@ Algoritmo sin_titulo
 			6:
 				Repetir			
 					
-					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ F"
+					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ FIGUEROA"
 					Escribir ""
-					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ APELLIDO"
-					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
-					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
-					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
+					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ FIGUEROA"
+					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ FIGUEROA"
+					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ FIGUEROA"
+					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ FIGUEROA"
 					Escribir ""	
-					Escribir "Selecciones una opción"
+					Escribir "Seleccione una opción"
 					Leer opcEj
 					
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "Este programa tiene como objetivo calcular la venta de un producto con un aumento del 30%"						
+							Escribir "Ingrese el precio de compra del articulo"
+							Leer Precio
+							R <- (Precio*30/100)+Precio
+							Escribir "Para obtener una ganancia del 30% debe vender el articulo a ", R						
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
 							Escribir "PROBLEMA:   SE TRATA DE ...."						
