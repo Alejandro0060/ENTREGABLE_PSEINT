@@ -31,6 +31,8 @@ Algoritmo sin_titulo
 	definir DnumerSecreto, Dn Como Entero
 	Definir Dx, DMn Como Entero
 	Definir BPrecio, BR Como Entero
+	Definir Bn, Bc Como Caracter
+	Definir Bpo, Bpd Como Real
 	
 	sum=0
 	cant=cant-1 
@@ -562,9 +564,30 @@ Algoritmo sin_titulo
 							Escribir "Para obtener una ganancia del 30% debe vender el articulo a ", R						
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."						
+							Escribir "Este programa tiene como objetivo calcular el descuento de un articulo dependiendo de la clave (1 o 2)"						
+							Escribir "Ingrese el nombre del articulo"
+							Leer Bn
+							Escribir "Ingrese el precio del articulo"
+							Leer Bpo
+							Escribir "Ingrese la clave"
+							Leer Bc
+							Si Bc="1" o Bc="2" Entonces
+								Si Bc="1"
+									Bpd <- Bpo-(Bpo*0.1)
+									Escribir "Resultado:"
+									Escribir "Nombre: ", Bn
+									Escribir "Precio original: $", Bpo
+									Escribir "Precio con descuento: $", Bpd
+								SiNo
+									Bpd <- Bpo-(Bpo*0.2)
+									Escribir "Resultado:"
+									Escribir "Nombre: ", Bn
+									Escribir "Precio original: $", Bpo
+									Escribir "Precio con descuento: $", Bpd
+								FinSi
+							SiNo 
+								Escribir "Ingrese una clave valida"
+							FinSi						
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
 							Escribir "PROBLEMA:   SE TRATA DE ...."						
