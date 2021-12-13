@@ -33,6 +33,7 @@ Algoritmo sin_titulo
 	Definir BPrecio, BR Como Entero
 	Definir Bn, Bc Como Caracter
 	Definir Bpo, Bpd Como Real
+	Definir BBn, Bi Como Real
 	
 	sum=0
 	cant=cant-1 
@@ -590,9 +591,14 @@ Algoritmo sin_titulo
 							FinSi						
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "Este programa tiene como objetivo mostrar una lista de numeros hasta el numero ingresado"						
+							Escribir "Ingrese un numero"
+							Leer BBn
+							Bi <- 0
+							Mientras Bi < BBn Hacer
+								Bi <- Bi+1
+								Escribir Bi
+							FinMientras					
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
 							Escribir "PROBLEMA:   SE TRATA DE ...."						
