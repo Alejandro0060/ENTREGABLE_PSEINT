@@ -41,7 +41,7 @@ Algoritmo sin_titulo
 		Escribir "1.  Ejercicios del aprendiz RODRIGUEZ"
 		Escribir "2.  Ejercicios del aprendiz ARAGON"
 		Escribir "3.  Ejercicios del aprendiz CRUZ"
-		Escribir "4.  Ejercicios del aprendiz D"
+		Escribir "4.  Ejercicios del aprendiz MORENO"
 		Escribir "5.  Ejercicios del aprendiz CONTRERAS"
 		Escribir "6.  Ejercicios del aprendiz F"
 		Escribir ""
@@ -436,10 +436,17 @@ Algoritmo sin_titulo
 								
 							FinMientras							
 						4:
-							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA";
+							Escribir "";
+							Escribir "PROBLEMA:   Leer 15 números negativos y convertirlos a positivos e imprimir dichos números";
+							Escribir "";
+							Escribir "Este programa le ayudara a convertir los numero es positivos";
+							Para Dx <- 1 Hasta 4 Con Paso 1 Hacer;
+								Escribir "Escriba un numero:";
+								Leer DMn;
+								
+								escribir  "El numero ", DMn, " Convertido en positivo es: ", abs(DMn);
+							FinPara					
 						De Otro Modo:
 							Escribir "OPCIÓN NO VÁLIDA"
 					Fin Segun			
