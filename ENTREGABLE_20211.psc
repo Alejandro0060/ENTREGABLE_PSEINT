@@ -18,6 +18,11 @@ Algoritmo sin_titulo
 	Definir JHoras,JHorasExtras,JPago Como Real
 	Definir Ja Como Entero
 	Definir J,Number,Jneutros,Jpositivos,Jnegativos Como Entero
+	definir cont, cant, repet Como entero
+	definir not,sum como real 
+	
+	sum=0
+	cant=cant-1 
 
 	
 	Repetir
@@ -40,9 +45,9 @@ Algoritmo sin_titulo
 					Escribir "AQUÍ SE PRESENTAN LOS EJERCICIOS DEL APRENDIZ RODRIGUEZ "
 					Escribir ""
 					Escribir "1.  Ejercicios SECUENCIALES DEL APRENDIZ RODRIGUEZ"
-					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ APELLIDO"
-					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ APELLIDO"
-					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ APELLIDO"
+					Escribir "2.  Ejercicios CONDICIONALES DE APRENDIZ RODRIGUEZ"
+					Escribir "3.  Ejercicios CICLICO MIENTRA DE APRENDIZ RODRIGUEZ"
+					Escribir "4.  Ejercicios CICLICO PARA DE APRENDIZ RODRIGUEZ"
 					Escribir ""	
 					Escribir "Selecciones una opción"
 					Leer opcEj
@@ -99,9 +104,20 @@ Algoritmo sin_titulo
 							Hasta Que ( a="T")  o (a="t")				
 						4:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
-							Escribir "PROBLEMA:   SE TRATA DE ...."						
-							Escribir "   SE TRATA DE ...."
-							Escribir "   SOLUCIONAR EL PROBLEMA."					
+							Escribir "Ingrese la cantidad de notas"
+							leer cant 
+							
+							Para repet<-1 Hasta cant Con Paso 1 Hacer
+								
+								Escribir"Dijite la nota "
+								leer not
+								sum<-sum+not
+								
+							Fin Para
+							
+							
+							escribir "La nota final que tuvo el estudiante es ", (sum/cant) 
+							
 						De Otro Modo:
 							Escribir "OPCIÓN NO VÁLIDA"
 					Fin Segun			
