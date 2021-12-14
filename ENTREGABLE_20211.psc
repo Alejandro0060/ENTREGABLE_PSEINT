@@ -487,9 +487,11 @@ Algoritmo sin_titulo
 							Escribir "ingrese el segundo numero"
 							leer b
 							Si aS>=b Entonces
+								escribir "los numeros ingresados son"
 								Escribir b
 								Escribir aS
 							SiNo
+								Escribir "los numeros ingresados son"
 								Escribir aS
 								Escribir b
 							Fin Si
