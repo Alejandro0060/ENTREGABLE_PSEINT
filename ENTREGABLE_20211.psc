@@ -244,8 +244,8 @@ Algoritmo sin_titulo
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir " En un hospital existen tres áreas: Ginecología, Pediatría, Traumatologia"
-							Escribir " El presupuesto anual del hospital se reparte conforme a la sig. tabla: "
+							Escribir "En un hospital existen tres áreas: Ginecología, Pediatría, Traumatologia"
+							Escribir "El presupuesto anual del hospital se reparte conforme a la sig. tabla: "
 							Escribir "                           Área            Porcentaje del presupuesto  "
 							Escribir "                       Ginecología                    40%     " 
 							Escribir "                     Traumatologia                    30%     "
@@ -261,7 +261,7 @@ Algoritmo sin_titulo
 							Escribir " El monto de Pediatría es de $ " , mP						
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
-							Escribir "Hacer un algoritmo que calcule el total a pagar por la compra de camisas"
+							Escribir " Hacer un algoritmo que calcule el total a pagar por la compra de camisas"
 							Escribir "Si se compran tres camisas o más se aplica un descuento del 20%"
 							Escribir "sobre el total de la compra y si son menos de tres camisas un descuento del 10%"
 							Escribir "Escriba el numero de camisas que ha comprado"
