@@ -244,8 +244,8 @@ Algoritmo sin_titulo
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
-							Escribir "En un hospital existen tres áreas: Ginecología, Pediatría, Traumatologia"
-							Escribir "El presupuesto anual del hospital se reparte conforme a la sig. tabla: "
+							Escribir " En un hospital existen tres áreas: Ginecología, Pediatría, Traumatologia"
+							Escribir " El presupuesto anual del hospital se reparte conforme a la sig. tabla: "
 							Escribir "                           Área            Porcentaje del presupuesto  "
 							Escribir "                       Ginecología                    40%     " 
 							Escribir "                     Traumatologia                    30%     "
