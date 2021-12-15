@@ -71,6 +71,7 @@ Algoritmo sin_titulo
 					Segun opcEj Hacer
 						1:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA SECUENCIAL"
+							Escribir "Un maestro desea saber qué porcentaje de hombres y que porcentaje de mujeres hay en un grupo de estudiantes."
 						    Escribir "Escriba numero de hombres en el grupo"
 							leer hombre 
 							Escribir " Escriba numero de mujeres en el grupo"
@@ -85,6 +86,9 @@ Algoritmo sin_titulo
 					
 						2:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CONDICIONAL"
+							Escribir "Un hombre desea saber cuánto dinero se genera por concepto de intereses sobre la"
+							Escribir "cantidad que tiene en inversión en el banco.El decidirá reinvertir los intereses" 
+							escribir "siemprey cuando estos excedan a $7000, y en ese caso desea saber cuánto dinero tendrá finalmente en su cuenta"
 							Escribir "ingrese el valor de los intereses"
 							leer a1 
 							Escribir "Ingrese la cantidad que va invertir en el banco"
@@ -102,6 +106,7 @@ Algoritmo sin_titulo
 							FinSi					
 						3:
 							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS"
+							Escribir "Leer números hasta que se introduzca un 0. Para cada uno indicar si es par o impar."
 							
 							
 							Repetir
@@ -119,7 +124,8 @@ Algoritmo sin_titulo
 								FinSi
 							Hasta Que ( a="T")  o (a="t")				
 						4:
-							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA MIENTRAS PARA"
+							Escribir "ESTE ES UN PROBLEMA DE ESTRUCTURA CICLICA PARA"
+							Escribir "Calcular el promedio de un alumno que tiene 7 calificaciones en la materia de Diseño Estructurado de Algoritmos"
 							Escribir "Ingrese la cantidad de notas"
 							leer cant 
 							
